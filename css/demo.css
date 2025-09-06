@@ -1,0 +1,46 @@
+.grid figure img,
+.grid figure figcaption {
+	border: 2px solid rgba(233, 221, 166, 0.851);
+}
+
+@keyframes grid-li-hover-1 {
+	from {
+		width: 33%;
+
+
+
+	}
+
+	to {
+		width: 35%;
+
+	}
+}
+
+@keyframes grid-li-hover-2 {
+	from {
+		width: 50%;
+
+
+
+	}
+
+	to {
+		width: 55%;
+
+	}
+}
+
+.grid li:hover {
+	animation-duration: 1s;
+	animation-name: grid-li-hover-1;
+
+}
+
+@media screen and (max-width: 624px) {
+	.grid li:hover {
+		animation-duration: 1s;
+		animation-name: grid-li-hover-2;
+	}
+
+}
