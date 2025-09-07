@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Prod Gallery
+ * Plugin Name: EStampel Product Gallery
  * Plugin URI: https://github.com/stamie/prod-gallery
  * Description: An ecommerce toolkit that helps you sell anything. Beautifully.
  * Version: 1.1.2
@@ -12,7 +12,7 @@
  * Requires at least: 6.8
  * Requires PHP: 7.4
  *
- * @package ProdGallery
+ * @package ESProductGallery
  */
 
 use WG\WG_GridGallery;
@@ -28,9 +28,9 @@ function WG_add_styles_and_scripts()
     $WG_Constantes = new WG_Constantes();
     wp_enqueue_style('WGStyle1', $WG_Constantes->get_ownUrl() . "/css/component.css", array(), '1.1', 'all');
     wp_enqueue_style('WGStyle2', $WG_Constantes->get_ownUrl() . "/css/demo.css", array('WGStyle1'), '1.1', 'all');
-    wp_enqueue_script("WGJs0", $WG_Constantes->get_ownUrl() . "/js/modernizr.custom.js", array('jquery'), '1.1', false);
-    wp_enqueue_script("WGJs1", $WG_Constantes->get_ownUrl() . "/js/imagesloaded.js", array('WGJs0'), '1.1', true);
-    wp_enqueue_script("WGJs2", $WG_Constantes->get_ownUrl() . "/js/masonry.js", array('WGJs1'), '1.1', true);
+    wp_enqueue_script("WGJs0", $WG_Constantes->get_ownUrl() . "/js/modernizr.custom.js", array('jquery'), '2.7.1', false);
+    wp_enqueue_script("WGJs1", $WG_Constantes->get_ownUrl() . "/js/imagesloaded.js", array('WGJs0'), '3.1.4', true);
+    wp_enqueue_script("WGJs2", $WG_Constantes->get_ownUrl() . "/js/masonry.js", array('WGJs1'), '3.1.4', true);
     wp_enqueue_script("WGJs3", $WG_Constantes->get_ownUrl() . "/js/classie.js", array('WGJs2'), '1.1', true);
     wp_enqueue_script("WGJs4", $WG_Constantes->get_ownUrl() . "/js/cbpgridgallery.js", array('WGJs3'), '1.1', true);
     wp_enqueue_script("WGJs5", $WG_Constantes->get_ownUrl() . "/js/loadgrids.js", array('WGJs4'), '1.1', true);
@@ -54,4 +54,4 @@ function wg_run_figure($args)
     return $gridGallery->get_echo();
 }
 
-add_shortcode('prod_gallery', 'wg_run_figure');
+add_shortcode('es_product_gallery', 'wg_run_figure');
