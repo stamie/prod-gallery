@@ -1,8 +1,8 @@
 === Prod Gallery ===
 Contributors: estampel
 Donate link: https://github.com/stamie
-Tested:  6.8.2
-Stable tag: 6.8
+Tested:  6.8
+Stable tag: 1.1.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/quick-guide-gplv3.html
 
@@ -42,30 +42,30 @@ It can be installed on an existing Wordpress site that also has the WooCommerce 
 
 * Free version
 
-Short kódot tud az ember használni, melynek neve [prod-gallery].
+You can use a short code called [es-product-gallery].
 
 ** Possible attributes
 
 * id: unique identifier for the grid list
     * Example:
-        * [prod-gallery id=’gallery1’]
+        * [es-product-gallery id=’gallery1’]
 * cat: slugs of product categories you want to filter by
     * Example:
-        * [prod-gallery cat=’kategoria1 kategoria2 kategoria3’]
+        * [es-product-gallery cat=’kategoria1 kategoria2 kategoria3’]
 * order: whatever value you want to list by
     * Example:
-        * [prod-gallery order=’name’]
+        * [es-product-gallery order=’name’]
 * by: Whether you want to list in descending or ascending order, there can be two values:
     * asc: ascending
     * desc: descending
     * Example:
-        * [prod-gallery order=’name’ by=’asc’]
+        * [es-product-gallery order=’name’ by=’asc’]
 * limit: Maximum number of products to list at once
     * Example:
-        * [prod-gallery limit=’10’]
+        * [es-product-gallery limit=’10’]
 * page: If you specify a limit value, you can specify which "page" to display.
     * Example:
-        * [prod-gallery limit=’10’ page=’3’]
+        * [es-product-gallery limit=’10’ page=’3’]
             * Meaning: List of elements from element 21 to element 30.
-        * [prod-gallery order=’name’ by=’desc’ limit=’10’ page=’3’]
+        * [es-product-gallery order=’name’ by=’desc’ limit=’10’ page=’3’]
             * Meaning: List of items from item 21 to item 30, sorted in descending order by product name.

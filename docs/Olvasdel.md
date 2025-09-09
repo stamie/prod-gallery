@@ -32,30 +32,30 @@ Meglévő Wordpress oldalra, melyre fel lett telepítve a woocommerce plugin is,
 
 ### Ingyenes verzió
 
-Short kódot tud az ember használni, melynek neve [woo-gallery].
+Short kódot tud az ember használni, melynek neve [es-product-gallery].
 
 #### Lehetséges attribútumok
 
 * id: egyedi azonosítója a grid listának
     * Pl
-        * [woo-gallery id=’gallery1’]
+        * [es-product-gallery id=’gallery1’]
 * cat: termék kategóriák slugjai, amire szűrni akar
     * Pl:
-        * [woo-gallery cat=’kategoria1 kategoria2 kategoria3’]
+        * [es-product-gallery cat=’kategoria1 kategoria2 kategoria3’]
 * order: Milyen érték szerint szeretnénk listázni
     * Pl.:
-        * [woo-gallery order=’name’]
+        * [es-product-gallery order=’name’]
 * by: Csökkenő, vagy növekvő sorrendben szeretné-e listázni, két értéke lehet:
     * asc: Növekvő
     * desc: csökkenő
     * Pl.:
-        * [woo-gallery order=’name’ by=’asc’]
+        * [es-product-gallery order=’name’ by=’asc’]
 * limit: Egyszerre maximum hány terméket listázzon ki
     * Pl.:
-        * [woo-gallery limit=’10’]
+        * [es-product-gallery limit=’10’]
 * page: Ha limit értéket ad meg, akkor megadható az, hogy hanyadik „oldal” jelenjen meg.
     * Pl.:
-        * [woo-gallery limit=’10’ page=’3’]
+        * [es-product-gallery limit=’10’ page=’3’]
             * Jelentése: 21. elemtől 30. elemig tartó elemek listája.
-        * [woo-gallery order=’name’ by=’desc’ limit=’10’ page=’3’]
+        * [es-product-gallery order=’name’ by=’desc’ limit=’10’ page=’3’]
             * Jelentése: 21. elemtől 30. elemig tartó elemek listája, terméknév alapján csökkenő sorrendben sorba rendezve.

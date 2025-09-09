@@ -1,4 +1,8 @@
-# Prod Gallery Plugin
+# Product Gallery Plugin
+
+## Licenses
+
+GPLv3
 
 ## Purpose
 
@@ -15,28 +19,26 @@ It can be installed on an existing Wordpress site that also has the WooCommerce 
 
 ### Free version installation
 
-1. In the WP installation section
-    1.1. Select the Add Extension menu item in the left menu
-    1.2. On the page that appears, click Upload Extension
-    1.3. Select the prod-gallery.zip file and confirm the upload.
-    1.4. After woocommerce is enabled, this plugin must also be enabled.
-    1.5. And you are done uploading the free version.
+    1. WP telepítő részénél
+        1.1. Bal oldali menüben a bővítmény hozzáadása menüpont kiválasztása
+        1.2. A megjelent oldalon meg kell nyomni a Bővítmény feltöltését
+        1.3. Ki kell választani a prod-gallery.zip fájlt, s jóvá kell hagyni a feltöltést.
+        1.4. Miután a woocommerce is be van kapcsolva, be kell kapcsolni ezt a plugint is.
+        1.5. S kész is az ingyenes verzió feltöltése.
 
-2. With FTP server
-    2.1. Upload the unpacked prod-gallery.zip file to the wp-content/plugins directory.
-    2.2. On the admin page, select Installed Extensions from the menu
-    2.3. On the page that appears, search for the Prod Gallery extension and enable it
-    2.4. And you are done uploading the free version.
+    2. FTP serverrel
+        2.1. wp-content/plugins könyvtár alá fel kell tölteni a kicsomagolt prod-gallery.zip fájlt.
+        2.2. Az admin oldalon a Telepített bővítmények ki kell választani a menüből
+        2.3. Az így megjelent oldalon, ki kell keresni a Prod Gallery bővítményt be kell kapcsolni
+        2.4. S kész is az ingyenes verzió feltöltése.
+
 ## User manual
 
 ### Free version
 
-Short kódot tud az ember használni, melynek neve [woo-gallery].
+Short kódot tud az ember használni, melynek neve [es-product-gallery].
 
 #### Possible attributes
-You can use a short code called [es-product-gallery].
-
-** Possible attributes
 
 * id: unique identifier for the grid list
     * Example:
