@@ -36,7 +36,7 @@ class WG_Figure
         }
         $categories = ( count($categories) > 0 ) ? array('categories' => $categories) : null;
         $products = array();
-        $limit = -1;
+        $limit = 5;
         $page = 0;
         if (isset($args['limit']) && intval($args['limit']) > 0){
             $limit = intval($args['limit']);
@@ -54,6 +54,11 @@ class WG_Figure
             }
 
         }
+
+        foreach ($args as $key => $arg) {
+            if ($key !== 'order' && $key !== 'by') $order_by[$key] = $arg;
+        }
+
         if (empty($categories)) {
             $products = wc_get_products(array(
                 'limit' => $limit,  // Attempt to fetch all products

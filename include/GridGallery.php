@@ -1,7 +1,7 @@
 <?php
 namespace WG;
 use WG\WG_Figure;
-require_once __DIR__."/Figure.php";
+require_once plugin_dir_path(__FILE__)."/Figure.php";
 class WG_GridGallery {
     
     const HEADER = //'<div class=clearfix></div>'.
@@ -22,8 +22,10 @@ class WG_GridGallery {
     private $echo = '';
     function __construct(array $args = array(), string $divId = null){
         $header = self::HEADER;
+        $div_id = 'grid-gallery';
         if (isset($divId)) {
             $header = str_replace('id="divId"', 'id="'.$divId.'"', $header);
+            $div_id = $divId;
         } else {
             $header = str_replace('id="divId"', 'id="grid-gallery"', $header);
         }
@@ -39,6 +41,12 @@ class WG_GridGallery {
         $wg_figure_slider = new WG_Figure($args, $categories, 'yes');
         $this->echo .= $wg_figure_slider->get_echo();
         $this->echo .= self::FOOTER;
+        $argsString = '';
+        foreach ($args as $key => $arg) {
+            $argsString .= $key . '="' . $arg .'" ';
+        }
+        $button = '[es-product-gallery-button id="'.$div_id.'" page="2" '.$argsString. ']';
+        // $this->echo .= do_shortcode($button);
     }
     public function get_echo() {
         return $this->echo;

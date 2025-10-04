@@ -44,3 +44,11 @@
 	}
 
 }
+
+button.grid-gallery-button {
+    background-color: var(--wpforms-button-background-color-alt, var(--wpforms-button-background-color));
+    color: var(--wpforms-button-text-color);
+	font-weight: 500;
+	height: var(--wpforms-button-size-height);
+	font-size: var(--wpforms-button-size-font-size);
+}
