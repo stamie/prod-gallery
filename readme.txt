@@ -1,8 +1,10 @@
 === Prod Gallery ===
 Contributors: estampel
 Donate link: https://github.com/stamie
-Tested:  6.8
-Stable tag: 1.1.4
+Requires at least: 6.8
+Tested:  6.8.2
+Requires Plugins: woocommerce
+Stable tag: 1.1.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/quick-guide-gplv3.html
 
